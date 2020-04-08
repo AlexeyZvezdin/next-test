@@ -1,15 +1,12 @@
+import Link from 'next/link';
+import Layout from '../components/Layout';
 export default () => {
   return (
-    <>
-      <h1>About</h1>
+    <Layout>
+      <h1 className="h1welcome">About</h1>
       <p>A js programmer</p>
-      <a style={{ display: 'block' }} href="/">
-        Go to home
-      </a>
-      <img
-        src="../static/img/240px-JavaScript-logo.png"
-        alt="javascript logo"
-      />
-    </>
+
+      <img src="/img/240px-JavaScript-logo.png" alt="javascript logo" />
+    </Layout>
   );
 };
